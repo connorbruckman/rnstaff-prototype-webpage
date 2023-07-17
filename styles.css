@@ -198,6 +198,21 @@ p {
   .right-4::after {
     left: -14px;
   }
+
+  /* CTA section CSS rules */
+  .cta-section {
+    background-color: #2163AA;
+  }
+
+  .cta-container {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+
+
+
+
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
