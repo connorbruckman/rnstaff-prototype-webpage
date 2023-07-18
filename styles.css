@@ -10,339 +10,366 @@
 
 /* Text CSS rules */
 * {
-    font-family: merriweather;
+  font-family: merriweather;
 }
 
-h2,h5 {
-    font-weight: bold;
-    color: #f5f5f5;
+h2,
+h5 {
+  font-weight: bold;
+  color: #f5f5f5;
 }
 
 h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 p {
-    font-family: montserrat;
+  font-family: montserrat;
 }
 
 /* Navbar CSS rules */
 
 .navbar-buffer {
-    height: 7.5vh;
+  height: 7.5vh;
 }
 
 .rnstaff-logo {
-    height: 5vh;
+  height: 5vh;
 }
 
 .nav-link {
-    color: #212529;
-    font-weight: bolder;
+  color: #212529;
+  font-weight: bolder;
 }
 
 .navbar {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .navbar-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .navbar-light .navbar-brand {
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .navbar-light .navbar-brand span {
-    color: #0527A5;
+  color: #0527A5;
 }
 
 .navbar-toggler {
-    padding: 1px 5px;
-    font-size: 18px;
-    line-height: .3;
-    background: #f5f5f5;
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: .3;
+  background: #f5f5f5;
 }
 
 /* Hero section CSS rules */
 .hero-section {
-    background-color: #DB3A3A;
+  background-color: #DB3A3A;
 }
 
-.rnstaff-hero-logo{
-    height: 10vh;
-    margin-bottom: 1rem;
+.rnstaff-hero-logo {
+  height: 10vh;
+  margin-bottom: 1rem;
 }
 
 .hero-header {
-    text-align: left;
+  text-align: left;
 }
 
 .btn-row {
-    margin: 2rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 .hero-btn {
-    font-family: montserrat;
-    color: #f5f5f5;
-    font-weight: 700;
-    line-height: 15px;
-    border: 2px solid #f5f5f5;
-    border-radius: 40px;
-    background: transparent;
-    transition: all 0.3s ease 0s;
-    padding: .5rem 1rem;
-    text-decoration: none;
-    margin: 0 .5rem 0 0;
+  font-family: montserrat;
+  color: #f5f5f5;
+  font-weight: 700;
+  line-height: 15px;
+  border: 2px solid #f5f5f5;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  margin: 0 .5rem 0 0;
 }
 
 .hero-btn:hover {
-    color: #bbb;
+  color: #bbb;
+}
+
+/* Our Services CSS rules */
+
+
+/* About Us CSS rules */
+.about-us-section {
+  background-color: #DB3A3A;
+}
+
+/* Our Services CSS Rules */
+
+.services-icon {
+  margin: auto;
 }
 
 /* Timeline CSS rules */
 
 .timeline-section-bg {
-    background: #DB3A3A;
-    background: linear-gradient(180deg, rgba(219,58,58,1) 0%,rgba(33,99,170,1) 100%);
+  background: #DB3A3A;
+  background: linear-gradient(180deg, rgba(219, 58, 58, 1) 0%, rgba(33, 99, 170, 1) 100%);
 }
 
 
 .timeline-bg {
-    background-color: #f5f5f5;
-    border-radius: 4rem;
-    padding-bottom: 2rem
+  background-color: #f5f5f5;
+  border-radius: 4rem;
+  padding-bottom: 2rem
 }
 
 .timeline-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .main-timeline-4 {
-    position: relative;
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #bbb;
+  top: 15px;
+  bottom: 8.333%;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-4 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #bbb;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-4 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-4 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(230, 86, 86);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(230, 86, 86);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #2163AA;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #2163AA transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-4::after {
+  left: -14px;
+}
+
+/* Testimonials section CSS rules */
+.testimonials-bg {
+  background-color: #2163AA;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'IM Fell French Canon SC';
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0px -10px 0px #DB3A3A;
+}
+
+.card-text {
+  text-align: center;
+  padding: 1rem;
+}
+
+.testimonial-img {
+  width: 30%;
+  border-radius: 5rem;
+  margin: 1rem auto 1rem auto;
+}
+
+.testimonial-title {
+  border-top: none;
+  text-align: center;
+  padding: 1rem 0 1.4rem 0;
+  font-family: merriweather;
+}
+
+.testimonial-name {
+  font-weight: bold;
+}
+
+@media(max-width:767px) {
+  .card {
+    margin: 1rem 0.7rem 1rem;
+    max-width: 80vw;
   }
-  
-  /* The actual timeline (the vertical ruler) */
+}
+
+/* CTA section CSS rules */
+.cta-section {
+  background-color: #2163AA;
+}
+
+.cta-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.nurse-img {
+  height: 60vh;
+  padding-top: 5vh;
+}
+
+.qr-code {
+  max-width: 30%;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
   .main-timeline-4::after {
-    content: "";
-    position: absolute;
-    width: 3px;
-    background-color: #bbb;
-    top: 15px;
-    bottom: 8.333%;
-    left: 50%;
-    margin-left: -3px;
+    left: 31px;
+    bottom: 10%;
   }
-  
-  /* Container around content */
+
+  .timeline-header {
+    width: 100%;
+    padding-left: 31px;
+    padding-right: 25px;
+    text-align: left;
+  }
+
+  /* Full-width containers */
   .timeline-4 {
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .timeline-4::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -11px;
-    background-color: #bbb;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left-4 {
-    padding: 0px 40px 20px 0px;
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right-4 {
-    padding: 0px 0px 20px 40px;
-    left: 50%;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
 
-  /* Add arrows to the left container (pointing right) */
-  .left-4::before {
-    content: " ";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    right: 30px;
-    border: medium solid rgb(230, 86, 86);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent  transparent transparent rgb(230, 86, 86);
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right-4::before {
-    content: " ";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #2163AA;
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-4::before {
+    left: 60px;
+    border: medium solid rgba(219, 58, 58, 0);
     border-width: 10px 10px 10px 0;
-    border-color: transparent #2163AA transparent transparent ;
+    border-color: transparent rgba(219, 58, 58, 0) transparent transparent;
   }
-  
-  /* Fix the circle for containers on the right side */
+
+  /* Make sure all circles are at the same spot */
+  .left-4::after,
   .right-4::after {
-    left: -14px;
+    left: 18px;
   }
 
-  /* Testimonials section CSS rules */
-  .testimonials-bg {
-    background-color: #2163AA;
+  .left-4::before {
+    right: auto;
   }
 
-  .card-title{
-    font-size: 1rem;
-    margin-bottom: 0;
-    font-weight: bold;
-    font-family: 'IM Fell French Canon SC';
+  /* Make all right containers behave like the left ones */
+  .right-4 {
+    left: 0%;
   }
 
-  .card{
-    border-radius: 1rem;
-    box-shadow: 0px -10px 0px #DB3A3A;
+  .testimonial-container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 
-  .card-text{
-      text-align: center;
-      padding: 1rem;
-  }
-
-  .testimonial-img{
-    width: 30%;
-    border-radius: 5rem;
-    margin: 1rem auto 1rem auto;
-  }
-
-  .testimonial-title{
-    border-top: none;
-    text-align: center;
-    padding: 1rem 0 1.4rem 0;
-    font-family: merriweather;
-  }
-
-  .testimonial-name {
-    font-weight: bold;
-  }
-
-  @media(max-width:767px){
-    .card{
-        margin: 1rem 0.7rem 1rem;
-        max-width: 80vw;
-    }
-  }
-
-  /* CTA section CSS rules */
-  .cta-section {
-    background-color: #2163AA;
+  /* Adjust nurse image to create better layout */
+  .nurse-img {
+    height: 60vh;
   }
 
   .cta-container {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  .nurse-img {
-    height: 60vh;
-    padding-top: 10vh;
-  }
+}
 
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-    /* Place the timelime to the left */
-    .main-timeline-4::after {
-      left: 31px;
-      bottom: 10%;
-    }
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #DB3A3A;
 
-    .timeline-header {
-        width: 100%;
-        padding-left: 31px;
-        padding-right: 25px;
-        text-align: left;
-    }
-
-  
-    /* Full-width containers */
-    .timeline-4 {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-    /* Make sure that all arrows are pointing leftwards */
-    .timeline-4::before {
-      left: 60px;
-      border: medium solid rgba(219, 58, 58, 0);
-      border-width: 10px 10px 10px 0;
-      border-color: transparent rgba(219, 58, 58, 0) transparent transparent;
-    }
-  
-    /* Make sure all circles are at the same spot */
-    .left-4::after,
-    .right-4::after {
-      left: 18px;
-    }
-  
-    .left-4::before {
-      right: auto;
-    }
-  
-    /* Make all right containers behave like the left ones */
-    .right-4 {
-      left: 0%;
-    }
-  }
-  
-  .gradient-custom {
-    /* fallback for old browsers */
-    background: #DB3A3A;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(
-      to right,
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right,
       rgb(219, 58, 58),
-      rgb(230, 86, 86)
-    );
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(
-      to right,
+      rgb(230, 86, 86));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right,
       rgb(219, 58, 58),
-      rgb(230, 86, 86)
-    );
-  }
-  
-  .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #2163AA;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(
-      to left,
+      rgb(230, 86, 86));
+}
+
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #2163AA;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left,
       rgb(101, 7, 201),
-      #2163AA
-    );
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(
-      to left,
+      #2163AA);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left,
       rgb(101, 7, 201),
-      #2163AA
-    );
-  }
+      #2163AA);
+}
