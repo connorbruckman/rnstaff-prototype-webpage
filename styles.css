@@ -72,7 +72,9 @@ p {
 
 /* Hero section CSS rules */
 .hero-section {
-  background-color: #DB3A3A;
+  background: linear-gradient(180deg,
+      #fa5959,
+      #DB3A3A);
 }
 
 .rnstaff-hero-logo {
@@ -106,18 +108,43 @@ p {
   color: #bbb;
 }
 
-/* Our Services CSS rules */
-
 
 /* About Us CSS rules */
 .about-us-section {
-  background-color: #DB3A3A;
+  background: linear-gradient(270deg,
+      #FFFFFB,
+      #f0f0f0);
 }
 
-/* Our Services CSS Rules */
+/* Our Services CSS rules */
+.our-services-section {
+  background: linear-gradient(180deg,
+      rgb(45, 109, 194),
+      #2163AA);
+}
 
 .services-icon {
   margin: auto;
+  color: #2163AA;
+  transition: color 0.25s ease-out 100ms
+}
+
+.services-icon:hover {
+  color: rgb(45, 109, 194);
+}
+
+/* Our Team CSS rules */
+.our-team-section {
+  background: linear-gradient(180deg,
+      rgb(230, 86, 86),
+      rgb(219, 58, 58));
+}
+
+.team-card-text {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: montserrat;
+  color: black;
 }
 
 /* Timeline CSS rules */
@@ -235,11 +262,12 @@ p {
 
 .card-text {
   text-align: center;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .testimonial-img {
-  width: 30%;
+  width: 120px;
   border-radius: 5rem;
   margin: 1rem auto 1rem auto;
 }
@@ -264,7 +292,9 @@ p {
 
 /* CTA section CSS rules */
 .cta-section {
-  background-color: #2163AA;
+  background: linear-gradient(180deg,
+      #2163AA,
+      #1d528a);
 }
 
 .cta-container {
@@ -278,7 +308,8 @@ p {
 }
 
 .qr-code {
-  max-width: 30%;
+  height: 40vh;
+  padding: 5vh 0;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
